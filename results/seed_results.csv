@@ -1,0 +1,4 @@
+seed,status,precision_pct,recall_pct,map50_pct,map50_95_pct,ap50_fire_pct,ap50_smoke_pct,ap_small_pct
+7,completed,90.6,88.3,94.0,70.9,90.3,97.7,69.3
+15,completed,91.3,88.0,93.8,70.6,90.0,97.7,70.3
+57,completed,90.7,88.0,93.9,70.9,90.0,97.8,69.9

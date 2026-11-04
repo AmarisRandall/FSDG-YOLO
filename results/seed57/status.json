@@ -1,0 +1,14 @@
+{
+  "snapshot_at": "2026-11-03T09:03:00.682594+08:00",
+  "completed_epochs_in_snapshot": 200,
+  "max_epochs": 200,
+  "seed": 57,
+  "status": "completed",
+  "final_evaluation_available": true,
+  "observations": [
+    "Epoch 79 train/box_loss was inf. Validation losses were finite. Training box loss was finite again at epoch 80 and through epoch 85.",
+    "Epoch 120 train/box_loss was inf. Validation losses were finite. Training box loss was finite from epochs 121 through 127."
+  ],
+  "exit_code": 0,
+  "weights_sha256": "fcf71deb5cc54ec514e21c5942840f3b27e8d9d100f089d3aa90e0b0e0010f12"
+}

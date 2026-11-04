@@ -1,0 +1,44 @@
+================================================================================
+[INFO] Model: [local path omitted]
+[INFO] Data YAML: [FASDD-UAV]\FASDD_UAV.yaml
+[INFO] Split: val
+[INFO] Image size: 640
+[INFO] Batch: 16
+[INFO] Device: 0
+================================================================================
+Ultralytics 8.4.27  Python-3.10.20 torch-2.7.1+cu128 CUDA:0 (NVIDIA GeForce RTX 5070 Ti, 16303MiB)
+YOLO11n_fsrdP2_dgfmv3P4P5_p2firealign summary: 340 layers, 2,874,497 parameters, 0 gradients, 12.4 GFLOPs
+
+
+                   all       5019      10698      0.907       0.88      0.939      0.709
+                  fire       1610       7209      0.886      0.817        0.9      0.581
+                 smoke       2614       3489      0.927      0.943      0.978      0.838
+Speed: 0.5ms preprocess, 2.0ms inference, 0.0ms loss, 0.5ms postprocess per image
+
+================================================================================
+[CLASS-WISE RESULTS]
+fire: Precision=0.8864, Recall=0.8170, AP50=0.8997, AP50-95=0.5807
+smoke: Precision=0.9269, Recall=0.9433, AP50=0.9783, AP50-95=0.8378
+--------------------------------------------------------------------------------
+AP50-fire: 0.8997
+AP50-smoke: 0.9783
+================================================================================
+
+[INFO] Evaluating small objects on 5019 val images...
+
+================================================================================
+[SMALL OBJECT RESULTS]
+Small object definition: area < 32x32 under imgsz=640
+Total small GT: 3855
+Matched small GT @IoU0.5: 3586
+AP50-small: 0.6987
+Recall-small@0.5: 0.9302
+================================================================================
+
+================================================================================
+[SUMMARY FOR PAPER TABLE]
+AP50-fire: 0.8997
+AP50-smoke: 0.9783
+AP50-small: 0.6987
+Recall-small@0.5: 0.9302
+================================================================================

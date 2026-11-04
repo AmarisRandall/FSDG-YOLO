@@ -1,0 +1,21 @@
+{
+  "dataset": "FASDD-UAV",
+  "split": "val",
+  "images": 5019,
+  "instances": 10698,
+  "checkpoint": "weights/seed15_best.pt",
+  "imgsz": 640,
+  "batch": 16,
+  "small_ground_truth_boxes": 3855,
+  "metrics_pct": {
+    "precision": 91.3,
+    "recall": 88.1,
+    "map50": 93.8,
+    "map50_95": 70.6,
+    "ap50_fire": 90.0,
+    "ap50_smoke": 97.7,
+    "ap_small": 70.3
+  },
+  "ap50_small": 0.7028,
+  "note": "Independent checkpoint validation. Recall was 88.1% in this run and 88.0% in the archived evaluation."
+}

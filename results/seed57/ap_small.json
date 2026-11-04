@@ -1,0 +1,17 @@
+{
+  "seed": 57,
+  "weight": "weights/best.pt (seed 57 training run)",
+  "weights_sha256": "fcf71deb5cc54ec514e21c5942840f3b27e8d9d100f089d3aa90e0b0e0010f12",
+  "data": "FASDD-UAV",
+  "split": "val",
+  "imgsz": 640,
+  "images": 5019,
+  "small_gt": 3855,
+  "matched_small_gt": 3586,
+  "small_area_lt": 1024,
+  "match_iou": 0.5,
+  "conf": 0.001,
+  "nms_iou": 0.7,
+  "ap50_small": 0.6987,
+  "recall_small": 0.9302
+}

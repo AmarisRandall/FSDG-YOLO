@@ -1,0 +1,48 @@
+python validate_ap_metrics.py
+================================================================================
+[INFO] Model: runs\detect\⭐FSDG-YOLO_FASDD_seed15\weights\best.pt
+[INFO] Data YAML: FASDD_UAV_YOLO\FASDD_UAV.yaml
+[INFO] Split: val
+[INFO] Image size: 640
+[INFO] Batch: 16
+[INFO] Device: 0
+================================================================================
+Ultralytics 8.4.27  Python-3.10.20 torch-2.7.1+cu128 CUDA:0 (NVIDIA GeForce RTX 5070 Ti, 16303MiB)
+FSDG-YOLO summary: 340 layers, 2,874,497 parameters, 0 gradients, 12.4 GFLOPs
+val: Fast image access  (ping: 0.10.0 ms, read: 594.4208.0 MB/s, size: 506.1 KB)
+val: Scanning FASDD_UAV_YOLO\labels\val.cache... 5019 images, 2364 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 5019/5019  0.0s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 314/314 6.1it/s 51.6s
+                   all       5019      10698      0.913       0.88      0.938      0.706
+                  fire       1610       7209      0.891      0.827        0.9      0.577
+                 smoke       2614       3489      0.936      0.934      0.977      0.835
+Speed: 1.8ms preprocess, 4.5ms inference, 0.0ms loss, 1.3ms postprocess per image
+
+================================================================================
+[CLASS-WISE RESULTS]
+fire: Precision=0.8907, Recall=0.8267, AP50=0.9000, AP50-95=0.5774
+smoke: Precision=0.9359, Recall=0.9335, AP50=0.9768, AP50-95=0.8349
+--------------------------------------------------------------------------------
+AP50-fire: 0.9000
+AP50-smoke: 0.9768
+================================================================================
+
+[INFO] Evaluating small objects on 5019 val images...
+
+================================================================================
+[SMALL OBJECT RESULTS]
+Small object definition: area < 32x32 under imgsz=640
+Total small GT: 3855
+Matched small GT @IoU0.5: 3551
+AP50-small: 0.7028
+Recall-small@0.5: 0.9211
+================================================================================
+
+================================================================================
+[SUMMARY FOR PAPER TABLE]
+AP50-fire: 0.9000
+AP50-smoke: 0.9768
+AP50-small: 0.7028
+Recall-small@0.5: 0.9211
+================================================================================
+
+Process finished with exit code 0
